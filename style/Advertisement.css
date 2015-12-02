@@ -101,13 +101,6 @@ a:hover{
 	background-color: #1E1E1E;
 }
 
-#logo {
-	width: 240px;
-	position: relative;
-	top: 23px;
-	left: 10px;
-}
-
 #location {
     margin-top: 10px;
     width: 100%;
@@ -180,6 +173,5 @@ a:hover{
 
 #ad {
     height: 500px;
-    clear: both;
     width: 100%;
 }
