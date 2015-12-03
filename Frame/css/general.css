@@ -29,7 +29,8 @@ body {
 	margin-left: 220px;
 	margin-top: -16px;
 	margin-bottom: -16px;
-	background-color: #ffffff
+	background-color: #ffffff;
+	min-height: 700px;
 }
 
 #footer {
