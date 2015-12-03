@@ -143,7 +143,7 @@ $(document).ready(function () {
 		$("#m8").slideToggle("fast", function () {
 		});
 	});
-    $("#content").click(function () {
+    $("#contact").click(function () {
 		$("#contactopt").slideToggle("fast", function () {
 		});
 	});
