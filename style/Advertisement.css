@@ -104,12 +104,6 @@ a:hover{
 	float: left;
 }
 
-#footertable {
-	float: left;
-	position: relative;
-	padding: 0;
-}
-
 #footer p {
 	display: inline-block;
 	color: #fafafa;
