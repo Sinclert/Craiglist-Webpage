@@ -9,7 +9,7 @@
 }
 
 #header img {
-    width: 300px;
+    width: 250px;
     height: 150px;
     margin-left: 20px;
 }
@@ -132,4 +132,18 @@ a:hover{
     margin-right: 50px;
     float: right;
     width: 30%;
+}
+
+.category-image {
+    border-radius: 100px;
+    width: 175px;
+    height: 175px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 75px;
+    background-color: black;
+}
+
+.category-image:hover {
+    opacity: 0.8;
 }
