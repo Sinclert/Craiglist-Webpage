@@ -31,10 +31,10 @@ body {
 
 #menu {
 	float: left;
-	width: 205px;
+	width: 200px;
 	z-index: 2;
 	position: relative;
-	margin-left: 10px;
+	margin-left: 20px;
 	color: #fafafa;
 	font-family: sans-serif;
 }
