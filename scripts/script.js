@@ -331,4 +331,7 @@ $(document).ready(function () {
 			$("#cat7").slideUp("fast");
 		}
 	});
+	$("#main_cat9").click(function () {
+		location.href = "subcategory.html";
+	});
 });
