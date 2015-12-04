@@ -1,88 +1,28 @@
 $(document).ready(function () {
+    
 	$(".img_category").val(0);
-	$("#c1").click(function () {
-		$("#m1").slideToggle("fast");
-		$("#m2").slideUp("fast");
-		$("#m3").slideUp("fast");
-		$("#m4").slideUp("fast");
-		$("#m5").slideUp("fast");
-		$("#m6").slideUp("fast");
-		$("#m7").slideUp("fast");
-		$("#m8").slideUp("fast");
+    var submenus = document.getElementsByClassName("submenu");
+    var clickers = document.getElementsByClassName("clicker");
+    
+    // FUNCTION 1
+	$(".clicker").click(function () {
+        for(i=0 ; i<submenus.length; i++){
+            
+            if ($(this)[0].id === $(clickers[i])[0].id){
+                $(submenus[i]).slideToggle("fast");
+                continue;
+            }
+            
+            $(submenus[i]).slideUp("fast");
+        }
 	});
-	$("#c2").click(function () {
-		$("#m1").slideUp("fast");
-		$("#m2").slideToggle("fast");
-		$("#m3").slideUp("fast");
-		$("#m4").slideUp("fast");
-		$("#m5").slideUp("fast");
-		$("#m6").slideUp("fast");
-		$("#m7").slideUp("fast");
-		$("#m8").slideUp("fast");
-	});
-	$("#c3").click(function () {
-		$("#m1").slideUp("fast");
-		$("#m2").slideUp("fast");
-		$("#m3").slideToggle("fast");
-		$("#m4").slideUp("fast");
-		$("#m5").slideUp("fast");
-		$("#m6").slideUp("fast");
-		$("#m7").slideUp("fast");
-		$("#m8").slideUp("fast");
-	});
-	$("#c4").click(function () {
-		$("#m1").slideUp("fast");
-		$("#m2").slideUp("fast");
-		$("#m3").slideUp("fast");
-		$("#m4").slideToggle("fast");
-		$("#m5").slideUp("fast");
-		$("#m6").slideUp("fast");
-		$("#m7").slideUp("fast");
-		$("#m8").slideUp("fast");
-	});
-	$("#c5").click(function () {
-		$("#m1").slideUp("fast");
-		$("#m2").slideUp("fast");
-		$("#m3").slideUp("fast");
-		$("#m4").slideUp("fast");
-		$("#m5").slideToggle("fast");
-		$("#m6").slideUp("fast");
-		$("#m7").slideUp("fast");
-		$("#m8").slideUp("fast");
-	});
-	$("#c6").click(function () {
-		$("#m1").slideUp("fast");
-		$("#m2").slideUp("fast");
-		$("#m3").slideUp("fast");
-		$("#m4").slideUp("fast");
-		$("#m5").slideUp("fast");
-		$("#m6").slideToggle("fast");
-		$("#m7").slideUp("fast");
-		$("#m8").slideUp("fast");
-	});
-	$("#c7").click(function () {
-		$("#m1").slideUp("fast");
-		$("#m2").slideUp("fast");
-		$("#m3").slideUp("fast");
-		$("#m4").slideUp("fast");
-		$("#m5").slideUp("fast");
-		$("#m6").slideUp("fast");
-		$("#m7").slideToggle("fast");
-		$("#m8").slideUp("fast");
-	});
-	$("#c8").click(function () {
-		$("#m1").slideUp("fast");
-		$("#m2").slideUp("fast");
-		$("#m3").slideUp("fast");
-		$("#m4").slideUp("fast");
-		$("#m5").slideUp("fast");
-		$("#m6").slideUp("fast");
-		$("#m7").slideUp("fast");
-		$("#m8").slideToggle("fast");
-	});
+    
+    // FUNCTION 2
 	$("#contact").click(function () {
 		$("#contactopt").slideToggle("fast");
 	});
+    
+    // FUNCTION 3
 	$("#main_cat1").click(function () {
 		if ($(this).val() === "1") {
 			$(this).val(0);
