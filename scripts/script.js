@@ -1,165 +1,270 @@
 $(document).ready(function () {
+	$(".img_category").val(0);
 	$("#c1").click(function () {
-		$("#m1").slideToggle("fast", function () {});
-		$("#m2").slideUp("fast", function () {});
-		$("#m3").slideUp("fast", function () {});
-		$("#m4").slideUp("fast", function () {});
-		$("#m5").slideUp("fast", function () {});
-		$("#m6").slideUp("fast", function () {});
-		$("#m7").slideUp("fast", function () {});
-		$("#m8").slideUp("fast", function () {});
+		$("#m1").slideToggle("fast");
+		$("#m2").slideUp("fast");
+		$("#m3").slideUp("fast");
+		$("#m4").slideUp("fast");
+		$("#m5").slideUp("fast");
+		$("#m6").slideUp("fast");
+		$("#m7").slideUp("fast");
+		$("#m8").slideUp("fast");
 	});
 	$("#c2").click(function () {
-		$("#m1").slideUp("fast", function () {});
-		$("#m2").slideToggle("fast", function () {});
-		$("#m3").slideUp("fast", function () {});
-		$("#m4").slideUp("fast", function () {});
-		$("#m5").slideUp("fast", function () {});
-		$("#m6").slideUp("fast", function () {});
-		$("#m7").slideUp("fast", function () {});
-		$("#m8").slideUp("fast", function () {});
+		$("#m1").slideUp("fast");
+		$("#m2").slideToggle("fast");
+		$("#m3").slideUp("fast");
+		$("#m4").slideUp("fast");
+		$("#m5").slideUp("fast");
+		$("#m6").slideUp("fast");
+		$("#m7").slideUp("fast");
+		$("#m8").slideUp("fast");
 	});
 	$("#c3").click(function () {
-		$("#m1").slideUp("fast", function () {});
-		$("#m2").slideUp("fast", function () {});
-		$("#m3").slideToggle("fast", function () {});
-		$("#m4").slideUp("fast", function () {});
-		$("#m5").slideUp("fast", function () {});
-		$("#m6").slideUp("fast", function () {});
-		$("#m7").slideUp("fast", function () {});
-		$("#m8").slideUp("fast", function () {});
+		$("#m1").slideUp("fast");
+		$("#m2").slideUp("fast");
+		$("#m3").slideToggle("fast");
+		$("#m4").slideUp("fast");
+		$("#m5").slideUp("fast");
+		$("#m6").slideUp("fast");
+		$("#m7").slideUp("fast");
+		$("#m8").slideUp("fast");
 	});
 	$("#c4").click(function () {
-		$("#m1").slideUp("fast", function () {});
-		$("#m2").slideUp("fast", function () {});
-		$("#m3").slideUp("fast", function () {});
-		$("#m4").slideToggle("fast", function () {});
-		$("#m5").slideUp("fast", function () {});
-		$("#m6").slideUp("fast", function () {});
-		$("#m7").slideUp("fast", function () {});
-		$("#m8").slideUp("fast", function () {});
+		$("#m1").slideUp("fast");
+		$("#m2").slideUp("fast");
+		$("#m3").slideUp("fast");
+		$("#m4").slideToggle("fast");
+		$("#m5").slideUp("fast");
+		$("#m6").slideUp("fast");
+		$("#m7").slideUp("fast");
+		$("#m8").slideUp("fast");
 	});
 	$("#c5").click(function () {
-		$("#m1").slideUp("fast", function () {});
-		$("#m2").slideUp("fast", function () {});
-		$("#m3").slideUp("fast", function () {});
-		$("#m4").slideUp("fast", function () {});
-		$("#m5").slideToggle("fast", function () {});
-		$("#m6").slideUp("fast", function () {});
-		$("#m7").slideUp("fast", function () {});
-		$("#m8").slideUp("fast", function () {});
+		$("#m1").slideUp("fast");
+		$("#m2").slideUp("fast");
+		$("#m3").slideUp("fast");
+		$("#m4").slideUp("fast");
+		$("#m5").slideToggle("fast");
+		$("#m6").slideUp("fast");
+		$("#m7").slideUp("fast");
+		$("#m8").slideUp("fast");
 	});
 	$("#c6").click(function () {
-		$("#m1").slideUp("fast", function () {});
-		$("#m2").slideUp("fast", function () {});
-		$("#m3").slideUp("fast", function () {});
-		$("#m4").slideUp("fast", function () {});
-		$("#m5").slideUp("fast", function () {});
-		$("#m6").slideToggle("fast", function () {});
-		$("#m7").slideUp("fast", function () {});
-		$("#m8").slideUp("fast", function () {});
+		$("#m1").slideUp("fast");
+		$("#m2").slideUp("fast");
+		$("#m3").slideUp("fast");
+		$("#m4").slideUp("fast");
+		$("#m5").slideUp("fast");
+		$("#m6").slideToggle("fast");
+		$("#m7").slideUp("fast");
+		$("#m8").slideUp("fast");
 	});
 	$("#c7").click(function () {
-		$("#m1").slideUp("fast", function () {});
-		$("#m2").slideUp("fast", function () {});
-		$("#m3").slideUp("fast", function () {});
-		$("#m4").slideUp("fast", function () {});
-		$("#m5").slideUp("fast", function () {});
-		$("#m6").slideUp("fast", function () {});
-		$("#m7").slideToggle("fast", function () {});
-		$("#m8").slideUp("fast", function () {});
+		$("#m1").slideUp("fast");
+		$("#m2").slideUp("fast");
+		$("#m3").slideUp("fast");
+		$("#m4").slideUp("fast");
+		$("#m5").slideUp("fast");
+		$("#m6").slideUp("fast");
+		$("#m7").slideToggle("fast");
+		$("#m8").slideUp("fast");
 	});
 	$("#c8").click(function () {
-		$("#m1").slideUp("fast", function () {});
-		$("#m2").slideUp("fast", function () {});
-		$("#m3").slideUp("fast", function () {});
-		$("#m4").slideUp("fast", function () {});
-		$("#m5").slideUp("fast", function () {});
-		$("#m6").slideUp("fast", function () {});
-		$("#m7").slideUp("fast", function () {});
-		$("#m8").slideToggle("fast", function () {});
+		$("#m1").slideUp("fast");
+		$("#m2").slideUp("fast");
+		$("#m3").slideUp("fast");
+		$("#m4").slideUp("fast");
+		$("#m5").slideUp("fast");
+		$("#m6").slideUp("fast");
+		$("#m7").slideUp("fast");
+		$("#m8").slideToggle("fast");
 	});
 	$("#contact").click(function () {
-		$("#contactopt").slideToggle("fast", function () {});
+		$("#contactopt").slideToggle("fast");
 	});
 	$("#main_cat1").click(function () {
-		$("#cat1").slideToggle("fast", function () {});
-		$("#cat2").slideUp("fast", function () {});
-		$("#cat3").slideUp("fast", function () {});
-		$("#cat4").slideUp("fast", function () {});
-		$("#cat5").slideUp("fast", function () {});
-		$("#cat6").slideUp("fast", function () {});
-		$("#cat7").slideUp("fast", function () {});
-		$("#cat8").slideUp("fast", function () {});
+		if ($(this).val() === "1") {
+			$(this).val(0);
+			$("#cat1").slideUp("fast", function () {
+				$("#subm1").slideUp("fast");
+				$("#subm1").fadeOut();
+			});
+		} else {
+			$(this).val(1);
+			$("#subm1").fadeIn("fast");
+			$("#cat1").slideDown("fast", function () {
+				$("#subm1").slideDown("fast");
+				$("#subm1").fadeIn();
+			});
+			$("#cat2").slideUp("fast");
+			$("#cat3").slideUp("fast");
+			$("#cat4").slideUp("fast");
+			$("#cat5").slideUp("fast");
+			$("#cat6").slideUp("fast");
+			$("#cat7").slideUp("fast");
+			$("#cat8").slideUp("fast");
+		}
 	});
 	$("#main_cat2").click(function () {
-		$("#cat1").slideUp("fast", function () {});
-		$("#cat2").slideToggle("fast", function () {});
-		$("#cat3").slideUp("fast", function () {});
-		$("#cat4").slideUp("fast", function () {});
-		$("#cat5").slideUp("fast", function () {});
-		$("#cat6").slideUp("fast", function () {});
-		$("#cat7").slideUp("fast", function () {});
-		$("#cat8").slideUp("fast", function () {});
+		if ($(this).val() === "1") {
+			$(this).val(0);
+			$("#cat2").slideUp("fast", function () {
+				$("#subm1").slideUp("fast");
+				$("#subm1").fadeOut();
+			});
+		} else {
+			$(this).val(1);
+			$("#subm1").fadeIn("fast");
+			$("#cat2").slideDown("fast", function () {
+				$("#subm1").slideDown("fast");
+				$("#subm1").fadeIn();
+			});
+			$("#cat1").slideUp("fast");
+			$("#cat3").slideUp("fast");
+			$("#cat4").slideUp("fast");
+			$("#cat5").slideUp("fast");
+			$("#cat6").slideUp("fast");
+			$("#cat7").slideUp("fast");
+			$("#cat8").slideUp("fast");
+		}
 	});
 	$("#main_cat3").click(function () {
-		$("#cat1").slideUp("fast", function () {});
-		$("#cat2").slideUp("fast", function () {});
-		$("#cat3").slideToggle("fast", function () {});
-		$("#cat4").slideUp("fast", function () {});
-		$("#cat5").slideUp("fast", function () {});
-		$("#cat6").slideUp("fast", function () {});
-		$("#cat7").slideUp("fast", function () {});
-		$("#cat8").slideUp("fast", function () {});
+		if ($(this).val() === "1") {
+			$(this).val(0);
+			$("#cat3").slideUp("fast", function () {
+				$("#subm1").slideUp("fast");
+				$("#subm1").fadeOut();
+			});
+		} else {
+			$(this).val(1);
+			$("#subm1").fadeIn("fast");
+			$("#cat3").slideDown("fast", function () {
+				$("#subm1").slideDown("fast");
+				$("#subm1").fadeIn();
+			});
+			$("#cat1").slideUp("fast");
+			$("#cat2").slideUp("fast");
+			$("#cat4").slideUp("fast");
+			$("#cat5").slideUp("fast");
+			$("#cat6").slideUp("fast");
+			$("#cat7").slideUp("fast");
+			$("#cat8").slideUp("fast");
+		}
 	});
 	$("#main_cat4").click(function () {
-		$("#cat1").slideUp("fast", function () {});
-		$("#cat2").slideUp("fast", function () {});
-		$("#cat3").slideUp("fast", function () {});
-		$("#cat4").slideToggle("fast", function () {});
-		$("#cat5").slideUp("fast", function () {});
-		$("#cat6").slideUp("fast", function () {});
-		$("#cat7").slideUp("fast", function () {});
-		$("#cat8").slideUp("fast", function () {});;
+		if ($(this).val() === "1") {
+			$(this).val(0);
+			$("#cat4").slideUp("fast", function () {
+				$("#subm2").slideUp("fast");
+				$("#subm2").fadeOut();
+			});
+		} else {
+			$(this).val(1);
+			$("#subm2").fadeIn("fast");
+			$("#cat4").slideDown("fast", function () {
+				$("#subm2").slideDown("fast");
+				$("#subm2").fadeIn();
+			});
+			$("#cat1").slideUp("fast");
+			$("#cat2").slideUp("fast");
+			$("#cat3").slideUp("fast");
+			$("#cat5").slideUp("fast");
+			$("#cat6").slideUp("fast");
+			$("#cat7").slideUp("fast");
+			$("#cat8").slideUp("fast");
+		}
 	});
 	$("#main_cat5").click(function () {
-		$("#cat1").slideUp("fast", function () {});
-		$("#cat2").slideUp("fast", function () {});
-		$("#cat3").slideUp("fast", function () {});
-		$("#cat4").slideUp("fast", function () {});
-		$("#cat5").slideToggle("fast", function () {});
-		$("#cat6").slideUp("fast", function () {});
-		$("#cat7").slideUp("fast", function () {});
-		$("#cat8").slideUp("fast", function () {});
+		if ($(this).val() === "1") {
+			$(this).val(0);
+			$("#cat5").slideUp("fast", function () {
+				$("#subm2").slideUp("fast");
+				$("#subm2").fadeOut();
+			});
+		} else {
+			$(this).val(1);
+			$("#subm2").fadeIn("fast");
+			$("#cat5").slideDown("fast", function () {
+				$("#subm2").slideDown("fast");
+				$("#subm2").fadeIn();
+			});
+			$("#cat1").slideUp("fast");
+			$("#cat2").slideUp("fast");
+			$("#cat3").slideUp("fast");
+			$("#cat4").slideUp("fast");
+			$("#cat6").slideUp("fast");
+			$("#cat7").slideUp("fast");
+			$("#cat8").slideUp("fast");
+		}
 	});
 	$("#main_cat6").click(function () {
-		$("#cat1").slideUp("fast", function () {});
-		$("#cat2").slideUp("fast", function () {});
-		$("#cat3").slideUp("fast", function () {});
-		$("#cat4").slideUp("fast", function () {});
-		$("#cat5").slideUp("fast", function () {});
-		$("#cat6").slideToggle("fast", function () {});
-		$("#cat7").slideUp("fast", function () {});
-		$("#cat8").slideUp("fast", function () {});
+		if ($(this).val() === "1") {
+			$(this).val(0);
+			$("#cat6").slideUp("fast", function () {
+				$("#subm2").slideUp("fast");
+				$("#subm2").fadeOut();
+			});
+		} else {
+			$(this).val(1);
+			$("#subm2").fadeIn("fast");
+			$("#cat6").slideDown("fast", function () {
+				$("#subm2").slideDown("fast");
+				$("#subm2").fadeIn();
+			});
+			$("#cat1").slideUp("fast");
+			$("#cat2").slideUp("fast");
+			$("#cat3").slideUp("fast");
+			$("#cat4").slideUp("fast");
+			$("#cat5").slideUp("fast");
+			$("#cat7").slideUp("fast");
+			$("#cat8").slideUp("fast");
+		}
 	});
 	$("#main_cat7").click(function () {
-		$("#cat1").slideUp("fast", function () {});
-		$("#cat2").slideUp("fast", function () {});
-		$("#cat3").slideUp("fast", function () {});
-		$("#cat4").slideUp("fast", function () {});
-		$("#cat5").slideUp("fast", function () {});
-		$("#cat6").slideUp("fast", function () {});
-		$("#cat7").slideToggle("fast", function () {});
-		$("#cat8").slideUp("fast", function () {});
+		if ($(this).val() === "1") {
+			$(this).val(0);
+			$("#cat7").slideUp("fast", function () {
+				$("#subm3").slideUp("fast");
+				$("#subm3").fadeOut();
+			});
+		} else {
+			$(this).val(1);
+			$("#subm3").fadeIn("fast");
+			$("#cat7").slideDown("fast", function () {
+				$("#subm3").slideDown("fast");
+				$("#subm3").fadeIn();
+			});
+			$("#cat1").slideUp("fast");
+			$("#cat2").slideUp("fast");
+			$("#cat3").slideUp("fast");
+			$("#cat4").slideUp("fast");
+			$("#cat5").slideUp("fast");
+			$("#cat6").slideUp("fast");
+			$("#cat8").slideUp("fast");
+		}
 	});
 	$("#main_cat8").click(function () {
-		$("#cat1").slideUp("fast", function () {});
-		$("#cat2").slideUp("fast", function () {});
-		$("#cat3").slideUp("fast", function () {});
-		$("#cat4").slideUp("fast", function () {});
-		$("#cat5").slideUp("fast", function () {});
-		$("#cat6").slideUp("fast", function () {});
-		$("#cat7").slideUp("fast", function () {});
-		$("#cat8").slideToggle("fast", function () {});
+		if ($(this).val() === "1") {
+			$(this).val(0);
+			$("#cat8").slideUp("fast", function () {
+				$("#subm3").slideUp("fast");
+				$("#subm3").fadeOut();
+			});
+		} else {
+			$(this).val(1);
+			$("#subm3").fadeIn("fast");
+			$("#cat8").slideDown("fast", function () {
+				$("#subm3").slideDown("fast");
+				$("#subm3").fadeIn();
+			});
+			$("#cat1").slideUp("fast");
+			$("#cat2").slideUp("fast");
+			$("#cat3").slideUp("fast");
+			$("#cat4").slideUp("fast");
+			$("#cat5").slideUp("fast");
+			$("#cat6").slideUp("fast");
+			$("#cat7").slideUp("fast");
+		}
 	});
 });

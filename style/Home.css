@@ -203,7 +203,7 @@ a:hover{
 
 .img_subcat {
 	position: absolute;
-	margin-top: -35%;
+	margin-top: -15%;
 	transform: translateX(-50%);
 	width: 100%;
 	-webkit-filter: blur(15px);
@@ -247,24 +247,5 @@ a:hover{
 
 /** Subcategories */
 
-/*#subm1{ display: none;}*/
-
-#cat1 {	display: none;}
-
-#cat2 {	display: none;}
-
-#cat3 {	display: none;}
-
-/*#subm2{ display: none;}*/
-
-#cat4 {	display: none;}
-
-#cat5 {	display: none;}
-
-#cat6 {	display: none;}
-
-/*/*#subm3{ display: none;}*/
-
-#cat7 {	display: none;}
-
-#cat8 {	display: none;}
+.subcategories { display: none;}
+#cat1 #cat2 #cat3 #cat4 #cat5 #cat6 #cat7 #cat8 {	display: none;}
