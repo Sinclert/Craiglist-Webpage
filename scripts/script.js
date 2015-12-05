@@ -19,7 +19,7 @@ $(document).ready(function () {
     
     // FUNCTION 2
 	$("#contact").click(function () {
-		$("#contactopt").slideToggle("fast");
+		$("#contact-options").slideToggle("fast");
 	});
     
     // FUNCTION 3
