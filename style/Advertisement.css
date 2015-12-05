@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
-    min-width: 1000px;
+    min-width: 700px;
 }
 
 #header {
@@ -160,12 +160,14 @@ a:hover{
     float: left;
     margin-top: 40px;
     margin-left: 10px;
+	color: #000000;
 }
 
 #slider {
-    min-height: 100%;
     float: left;
     width: 50%;
+	min-width: 300px;
+	max-width: 100%;
 }
 
 #slider img {
@@ -211,4 +213,28 @@ a:hover{
 #contact-options p:hover{
     color: #1EAAF1;
     cursor: pointer;
+}
+p {
+	font-family: sans-serif;
+	font-weight: 150;
+	font-size: 14px;
+}
+
+#location a {
+	color: #000000;
+}
+
+@media only screen and (min-width: 550px) and (max-width: 840px){
+	#slider {
+		float: left;
+		width: 100%;
+		min-width: 300px;
+	}
+	
+	#description {
+		float: left;
+		text-align: justify;
+		width: 100%;
+		margin-left: 10px;
+	}
 }
