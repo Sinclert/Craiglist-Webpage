@@ -1,7 +1,13 @@
+body {
+	margin: 0;
+	padding: 0;
+	min-width: 1000px;
+}
+
 #header {
 	position: relative;
 	z-index: 2;
-	margin-top: -16px;
+	margin-top: -22px;
 	width: 100%;
 	background-color: #1EAAF1;
 	height: 120px;
@@ -17,6 +23,8 @@
 #header-icons {
     float: right;
     display: inline-block;
+    white-space: nowrap;
+    margin-right: 2%;
     height: 120px;
     width: 10%;
 }
@@ -25,8 +33,8 @@
     float: right;
     margin-right: 20px;
     margin-top: 60px;
-    width: 20%;
-    height: 20%;
+    width: 30px;
+    height: 30px;
 }
 
 #search {
@@ -36,15 +44,9 @@
     min-width: 250px;
 }
 
-body {
-	margin: 0;
-	padding: 0;
-	min-width: 1000px;
-}
-
 #menubar {
 	z-index: 1;
-	position: fixed;
+	position: absolute;
 	height: 100%;
 	width: 220px;
 	background-color: #414141;
@@ -57,13 +59,13 @@ body {
 	z-index: 2;
 	position: relative;
 	margin-left: 20px;
-	color: #fafafa;
+	color: #FAFAFA;
 	font-family: sans-serif;
 }
 
 .menu-category {
 	font-size: 14px;
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .menu-category:hover {
@@ -101,7 +103,7 @@ a:hover{
 }
 
 #footer {
-	height: 60px;
+	height: 50px;
 	width: 100%;
 	position: relative;
 	z-index: 1;
@@ -134,9 +136,9 @@ a:hover{
 #content {
 	z-index: 2;
 	min-height: 700px;
-	margin-left: 230px;
 	margin-top: -16px;
 	margin-bottom: -16px;
+    margin-left: 220px;
 }
 
 /* Particular elements */
@@ -153,6 +155,7 @@ a:hover{
 #location img {
     float: left;
     margin-top: 20px;
+    margin-left: 10px;
     width: 50px;
     height: 50px;
 }
