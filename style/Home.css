@@ -4,6 +4,12 @@ body {
 	min-width: 1000px;
 }
 
+p {
+	font-family: sans-serif;
+	font-weight: 150;
+	font-size: 14px;
+}
+
 #header {
 	position: relative;
 	z-index: 2;
@@ -26,7 +32,6 @@ body {
     white-space: nowrap;
     margin-right: 2%;
     height: 120px;
-    width: 10%;
 }
 
 #header-icons img {
@@ -40,6 +45,7 @@ body {
 #search {
     float: right;
     margin-top: 45px;
+    margin-right: 20px;
     width: 30%;
     min-width: 250px;
 }
@@ -103,15 +109,15 @@ a:hover{
 }
 
 #footer {
+    float: left;
+    position: relative;
+    overflow: hidden;
+    background-color: #1E1E1E;
 	height: 50px;
 	width: 100%;
-	position: relative;
 	z-index: 1;
 	bottom: 0;
-	float: left;
-	background-color: #1E1E1E;
 	min-width: 1024;
-	overflow-x: hidden;
 }
 
 #copyright {
