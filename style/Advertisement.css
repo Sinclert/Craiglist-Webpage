@@ -190,8 +190,8 @@ a:hover{
 #description {
     float: left;
     text-align: justify;
-    min-height: 100%;
-    width: 50%;
+    width: 45%;
+    margin-right: 5%;
 }
 
 #options {
@@ -211,8 +211,8 @@ a:hover{
 }
 
 #contact-options {
-    margin-left: 7%;
     display: none;
+    margin-left: 7%;
     width: 100;
 }
 
