@@ -8,16 +8,30 @@
 	box-shadow: 0px 2px 6px rgba(0,0,0,0.50);
 }
 
-#header img {
+#logo {
     margin-top: 45px;
     margin-left: 20px;
     width: 250px;
 }
 
-#search {
-    margin-top: 45px;
-    margin-right: 50px;
+#header-icons {
     float: right;
+    display: inline-block;
+    height: 120px;
+    width: 10%;
+}
+
+#header-icons img {
+    float: right;
+    margin-right: 20px;
+    margin-top: 60px;
+    width: 20%;
+    height: 20%;
+}
+
+#search {
+    float: right;
+    margin-top: 45px;
     width: 30%;
     min-width: 250px;
 }
@@ -47,14 +61,13 @@ body {
 	font-family: sans-serif;
 }
 
-.unselectable {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+.menu-category {
 	font-size: 14px;
+    cursor: pointer;
+}
+
+.menu-category:hover {
+    color: #1EAAF1;
 }
 
 .clicker {
@@ -88,7 +101,7 @@ a:hover{
 }
 
 #footer {
-	height: 60px;
+	height: 50px;
 	width: 100%;
 	position: relative;
 	z-index: 1;
@@ -121,7 +134,7 @@ a:hover{
 #content {
     z-index: 2;
     min-height: 700px;
-    margin-left: 230px;
+    margin-left: 220px;
     margin-top: -16px;
     margin-bottom: -16px;
 }
@@ -136,6 +149,7 @@ a:hover{
 #location img {
     float: left;
     margin-top: 20px;
+    margin-left: 10px;
     width: 50px;
     height: 50px;
 }
@@ -146,39 +160,49 @@ a:hover{
     margin-left: 10px;
 }
 
-#description {
-    text-align: justify;
-    padding-left: 10px;
-    padding-right: 10px;
+#slider {
+    min-height: 100%;
     float: left;
-    width: 48%;
-    min-width: 400px;
-    max-width: 600px;
+    width: 50%;
+}
+
+#slider img {
+    margin-top: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+}
+
+#description {
+    float: left;
+    text-align: justify;
+    min-height: 100%;
+    width: 50%;
+}
+
+#description p{
+    margin-right: 5%;
 }
 
 #options {
-    width: 400px;
-    clear: both;
-}
-
-#options li {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-#ad img {
-    float: left;
-    margin-left: 10px;
-    width: 48%;
-    min-width: 400px;
-    max-width: 600px;
-}
-
-#ad {
-    height: 500px;
     width: 100%;
+    white-space: nowrap;
+    margin-right: 5%;
 }
 
-#contactopt {
+#options div {
+    width: 24%;
+    text-align: center;
+    display: inline-block;
+}
+
+#contact-options {
+    margin-left: 7%;
     display: none;
+    width: 100;
+}
+
+#contact-options p:hover{
+    color: #1EAAF1;
+    cursor: pointer;
 }
