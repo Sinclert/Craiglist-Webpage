@@ -150,10 +150,30 @@ a:hover{
     margin-left: 10px;
 }
 
-#location button {
+#location ul {
     float: right;
     margin-top: 40px;
     margin-right: 100px;
+}
+
+.sort li ul {
+    
+    display: none;
+    position: absolute;
+}
+
+.sort li ul li {
+    text-align: center;
+    background-color: #fafafa;
+    width: 100px;
+    height: 30px;
+    padding: 5px;
+    font-family: sans-serif;
+    
+}
+
+.sort li:hover > ul {
+    display: block;
 }
 
 #sortbutton {
@@ -162,10 +182,14 @@ a:hover{
 }
 
 #triangle {
+    margin-left: 5px;
+    padding: -5px 0 -5px 0; 
     float: left;
+    width: 0;
+    height: 0;
     border-style: solid;
-    border-width: 10px 10px 10px 10px; 
-    border-color: transparent transparent transparent #414141;
+    border-width: 15px 10px 0 10px;
+    border-color: #1EAAF1 transparent transparent transparent;
 }
 
 #button_text {
