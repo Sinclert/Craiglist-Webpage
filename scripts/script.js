@@ -19,7 +19,7 @@ $(document).ready(function () {
     
     // FUNCTION 2
 	$("#contact").click(function () {
-		$("#contactopt").slideToggle("fast");
+		$("#contact-options").slideToggle("fast");
 	});
     
     // FUNCTION 3
@@ -275,3 +275,27 @@ $(document).ready(function () {
 		location.href = "subcategory.html";
 	});
 });
+
+
+function sort() {
+    ul = document.getElementById("list");
+    
+    // Get the list items and setup an array for sorting
+    var lis = ul.getElementsByTagName("div");
+    var vals = [];
+
+    
+    // Populate the array
+    for (var i = 0, l = lis.length; i < l; i++){
+        var value = lis[i].getElementsByClassName("ad-tittle");
+        vals.push(value[0].parentElement.innerHTML);
+    }
+    
+    // Sort it
+    vals.sort();
+    
+    // Change the list on the page
+    for (var i = 0, l = lis.length; i < l; i++){
+        lis[i].innerHTML = vals[i];
+    }
+}

@@ -1,31 +1,47 @@
+body {
+	margin: 0;
+	padding: 0;
+    min-width: 1000px;
+}
+
 #header {
 	position: relative;
 	z-index: 2;
-	margin-top: -16px;
+	margin-top: -22px;
 	width: 100%;
 	background-color: #1EAAF1;
 	height: 120px;
 	box-shadow: 0px 2px 6px rgba(0,0,0,0.50);
 }
 
-#header img {
+#logo {
     margin-top: 45px;
     margin-left: 20px;
     width: 250px;
 }
 
-#search {
-    margin-top: 45px;
-    margin-right: 50px;
+#header-icons {
     float: right;
-    width: 30%;
-    min-width: 250px;
+    display: inline-block;
+    white-space: nowrap;
+    margin-right: 2%;
+    height: 120px;
+    width: 10%;
 }
 
-body {
-	margin: 0;
-	padding: 0;
-    min-width: 1000px;
+#header-icons img {
+    float: right;
+    margin-right: 20px;
+    margin-top: 60px;
+    width: 30px;
+    height: 30px;
+}
+
+#search {
+    float: right;
+    margin-top: 45px;
+    width: 30%;
+    min-width: 250px;
 }
 
 #menubar {
@@ -43,18 +59,17 @@ body {
 	z-index: 2;
 	position: relative;
 	margin-left: 20px;
-	color: #fafafa;
+	color: #FAFAFA;
 	font-family: sans-serif;
 }
 
-.unselectable {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+.menu-category {
 	font-size: 14px;
+    cursor: pointer;
+}
+
+.menu-category:hover {
+    color: #1EAAF1;
 }
 
 .clicker {
@@ -88,7 +103,7 @@ a:hover{
 }
 
 #footer {
-	height: 60px;
+	height: 50px;
 	width: 100%;
 	position: relative;
 	z-index: 1;
@@ -121,9 +136,9 @@ a:hover{
 #content {
     z-index: 2;
     min-height: 700px;
-    margin-left: 230px;
     margin-top: -16px;
     margin-bottom: -16px;
+    margin-left: 220px;
 }
 
 /* Particular elements */
@@ -136,6 +151,7 @@ a:hover{
 #location img {
     float: left;
     margin-top: 20px;
+    margin-left: 10px;
     width: 50px;
     height: 50px;
 }
@@ -146,39 +162,53 @@ a:hover{
     margin-left: 10px;
 }
 
-#description {
-    text-align: justify;
-    padding-left: 10px;
-    padding-right: 10px;
+#slider {
+    min-height: 100%;
     float: left;
-    width: 48%;
-    min-width: 400px;
-    max-width: 600px;
+    width: 50%;
+}
+
+#slider img {
+    margin-top: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+}
+
+#description {
+    float: left;
+    text-align: justify;
+    min-height: 100%;
+    width: 50%;
+}
+
+#description p{
+    margin-right: 8%;
 }
 
 #options {
-    width: 400px;
-    clear: both;
+    width: 95%;
+    white-space: nowrap;
 }
 
-#options li {
+#options div {
+    width: 24%;
+    text-align: center;
     display: inline-block;
-    margin-right: 20px;
 }
 
-#ad img {
-    float: left;
-    margin-left: 10px;
-    width: 48%;
-    min-width: 400px;
-    max-width: 600px;
+#options div:hover{
+    color: #1EAAF1;
+    cursor: pointer;
 }
 
-#ad {
-    height: 500px;
-    width: 100%;
-}
-
-#contactopt {
+#contact-options {
+    margin-left: 7%;
     display: none;
+    width: 100;
+}
+
+#contact-options p:hover{
+    color: #1EAAF1;
+    cursor: pointer;
 }

@@ -11,7 +11,13 @@
 	<body>
 
 		<div id = "header">
-			<a href = "Home.html"><img src="images/craigslist.svg"></a>
+			<a href = "Home.html"><img src="images/craigslist.svg" id = "logo"></a>
+            
+            <div id = "header-icons">
+                <img src="images/Login-icon.png">
+                <img src="images/Wolrd-icon.png">
+            </div>
+            
             <gcse:search id = "search"></gcse:search>
             <script>
                   (function() {
@@ -30,7 +36,7 @@
         <div id = "menubar"></div>
 		<div id = "menu">
 			<div class="clicker" id="c1">
-				<p class="unselectable">Community</p>
+				<p class="menu-category">Community</p>
 			</div>
 			<div class="submenu" id="m1">
 				<ul>
@@ -51,7 +57,7 @@
 				</ul>
 			</div>
 			<div class="clicker" id="c2">
-				<p class="unselectable">Personals</p>
+				<p class="menu-category">Personals</p>
 			</div>
 			<div class="submenu" id="m2">
 				<ul>
@@ -67,7 +73,7 @@
 				</ul>
 			</div>
 			<div class="clicker" id="c3">
-				<p class="unselectable">Discussion forums</p>
+				<p class="menu-category">Discussion forums</p>
 			</div>
 			<div class="submenu" id="m3">
 				<ul>
@@ -141,7 +147,7 @@
 				</ul>
 			</div>
 			<div class="clicker" id="c4">
-				<p class="unselectable">Housing</p>
+				<p class="menu-category">Housing</p>
 			</div>
 			<div class="submenu" id="m4">
 				<ul>
@@ -158,7 +164,7 @@
 				</ul>
 			</div>
 			<div class="clicker" id="c5">
-				<p class="unselectable">For sale</p>
+				<p class="menu-category">For sale</p>
 			</div>
 			<div class="submenu" id="m5">
 				<ul>
@@ -203,7 +209,7 @@
 				</ul>
 			</div>
 			<div class="clicker" id="c6">
-				<p class="unselectable">Services</p>
+				<p class="menu-category">Services</p>
 			</div>
 			<div class="submenu" id="m6">
 				<ul>
@@ -230,7 +236,7 @@
 				</ul>
 			</div>
 			<div class="clicker" id="c7">
-				<p class="unselectable">Jobs</p>
+				<p class="menu-category">Jobs</p>
 			</div>
 			<div class="submenu" id="m7">
 				<ul>
@@ -270,7 +276,7 @@
 				</ul>
 			</div>
 			<div class="clicker" id="c8">
-				<p class="unselectable">Temporal Jobs</p>
+				<p class="menu-category">Temporal Jobs</p>
 			</div>
 			<div class="submenu" id="m8">
 				<ul>
@@ -284,39 +290,49 @@
 					<li><a href="subcategory.html">Writing</a></li>
 				</ul>
 			</div>
-			<div class="clicker"><p class="unselectable">CVS</p></div>
+			<div class="clicker">
+                <a href="subcategory.html"><p class="menu-category">CVS</p></a>
+            </div>
 		</div>
 
 		<div id="content">
 
-        <div id = "location">
-            <a href = "Home.html"><img src = "images/home.svg" alt = "Home icon"></a>
-            <p>For sale > Electronics</p>
+            <div id = "location">
+                <a href = "Home.html"><img src = "images/home.svg" alt = "Home icon"></a>
+                <p>For sale > Electronics</p>
+            </div>
+
+            <div id = "ad">
+            
+                <div id = "slider">
+                    <img src = "images/Specific-ad/image-1.jpg">
+                </div>
+                
+                <div id = "description">
+                    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id aliquam urna. Morbi sodales sem augue, eget elementum quam auctor vel. Suspendisse placerat arcu non metus euismod faucibus non eu orci. Nam sit amet lacus ligula. Etiam varius metus at leo pulvinar, sed tristique urna convallis. Donec porta, sapien sed egestas faucibus, dolor diam euismod tellus, ac porttitor orci tellus at tellus. Etiam ut nulla ut justo dictum aliquet.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id aliquam urna. Morbi sodales sem augue, eget elementum quam auctor vel. Suspendisse placerat arcu non metus euismod faucibus non eu orci. Nam sit amet lacus ligula. Etiam varius metus at leo pulvinar, sed tristique urna convallis. Donec porta, sapien sed egestas faucibus, dolor diam euismod tellus, ac porttitor orci tellus at tellus. Etiam ut nulla ut justo dictum aliquet.
+                    </p>
+
+                    <div id = "options">
+                        <div id = "contact">Contact</div>
+                        <div>Share</div>
+                        <div>Favorite</div>
+                        <div>Report</div>
+                    </div>
+                
+                    <div id = "contact-options">
+                        <p>Phone: +34 789456123</p>
+                        <p>Email: redmond@live.com</p>
+                        <p>URL: twitter.com/redmond</p>
+                    </div>
+                </div>
+            </div>
+        
         </div>
 
-        <div id = "ad">
-            <img src = "images/Specific-ad/image-1.jpg">
-
-		    <div id="description">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id aliquam urna. Morbi sodales sem augue, eget elementum quam auctor vel. Suspendisse placerat arcu non metus euismod faucibus non eu orci. Nam sit amet lacus ligula. Etiam varius metus at leo pulvinar, sed tristique urna convallis. Donec porta, sapien sed egestas faucibus, dolor diam euismod tellus, ac porttitor orci tellus at tellus. Etiam ut nulla ut justo dictum aliquet.</p>
-
-                  <div id = "options">
-                      <ul>
-                          <li id="contact">Contact</li>
-                          <li>Share</li>
-                          <li>Favorite</li>
-                          <li>Report</li>
-                      </ul>
-                  </div>
-                  <div id="contactopt">dsadsadsa</div>
-              </div>
-          </div>
-
-		</div>
-
-		<div id="footer">
-			<p id="copyright">©2015 Craigslist</p>
-			<div id="footertext">
+		<div id = "footer">
+			<p id = "copyright">©2015 Craigslist</p>
+			<div id = "footertext">
 				<p>Help</p>
 				<p>Safety</p>
 				<p>Privacy</p>

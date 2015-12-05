@@ -11,7 +11,13 @@
 	<body>
 
 		<div id = "header">
-			<a href = "Home.html"><img src="images/craigslist.svg"></a>
+			<a href = "Home.html"><img src="images/craigslist.svg" id = "logo"></a>
+            
+            <div id = "header-icons">
+                <img src="images/Login-icon.png">
+                <img src="images/Wolrd-icon.png">
+            </div>
+            
             <gcse:search id = "search"></gcse:search>
             <script>
                   (function() {
@@ -30,7 +36,7 @@
         <div id = "menubar"></div>
 		<div id = "menu">
 			<div class="clicker" id="c1">
-				<p class="unselectable">Community</p>
+				<p class="menu-category">Community</p>
 			</div>
 			<div class="submenu" id="m1">
 				<ul>
@@ -51,7 +57,7 @@
 				</ul>
 			</div>
 			<div class="clicker" id="c2">
-				<p class="unselectable">Personals</p>
+				<p class="menu-category">Personals</p>
 			</div>
 			<div class="submenu" id="m2">
 				<ul>
@@ -67,7 +73,7 @@
 				</ul>
 			</div>
 			<div class="clicker" id="c3">
-				<p class="unselectable">Discussion forums</p>
+				<p class="menu-category">Discussion forums</p>
 			</div>
 			<div class="submenu" id="m3">
 				<ul>
@@ -141,7 +147,7 @@
 				</ul>
 			</div>
 			<div class="clicker" id="c4">
-				<p class="unselectable">Housing</p>
+				<p class="menu-category">Housing</p>
 			</div>
 			<div class="submenu" id="m4">
 				<ul>
@@ -158,7 +164,7 @@
 				</ul>
 			</div>
 			<div class="clicker" id="c5">
-				<p class="unselectable">For sale</p>
+				<p class="menu-category">For sale</p>
 			</div>
 			<div class="submenu" id="m5">
 				<ul>
@@ -203,7 +209,7 @@
 				</ul>
 			</div>
 			<div class="clicker" id="c6">
-				<p class="unselectable">Services</p>
+				<p class="menu-category">Services</p>
 			</div>
 			<div class="submenu" id="m6">
 				<ul>
@@ -230,7 +236,7 @@
 				</ul>
 			</div>
 			<div class="clicker" id="c7">
-				<p class="unselectable">Jobs</p>
+				<p class="menu-category">Jobs</p>
 			</div>
 			<div class="submenu" id="m7">
 				<ul>
@@ -270,7 +276,7 @@
 				</ul>
 			</div>
 			<div class="clicker" id="c8">
-				<p class="unselectable">Temporal Jobs</p>
+				<p class="menu-category">Temporal Jobs</p>
 			</div>
 			<div class="submenu" id="m8">
 				<ul>
@@ -284,7 +290,9 @@
 					<li><a href="subcategory.html">Writing</a></li>
 				</ul>
 			</div>
-			<div class="clicker"><p class="unselectable">CVS</p></div>
+			<div class="clicker">
+                <a href="subcategory.html"><p class="menu-category">CVS</p></a>
+            </div>
 		</div>
 
 		<div id = "content">
@@ -292,6 +300,7 @@
             <div id = "location">
                 <a href = "Home.html"><img src = "images/home.svg" alt = "Home icon"></a>
                 <p>For sale > Electronics</p>
+<<<<<<< HEAD
                 <!-- <button id = "sortbutton" type = "button"><div id= "button_text">Sort by</div><div id = "triangle"></div></button> -->
                 <ul class = "sort">
                     <li>
@@ -304,84 +313,76 @@
                         </ul>
                     </li>
                 </ul>
+=======
+                <button id = "sortbutton" type = "button" onclick ="sort()">
+                    <div id= "button_text">Alphabetical</div>
+                    <div id = "triangle"></div>
+                </button>
+>>>>>>> origin/master
             </div>
 
             <div id = "list">
-                <ul>
 
-                    <!-- First advertisement -->
-                    <li>
-                        <a href = "Advertisement.html">
-                        <div class = "ad" id = "advertisement-1">
-                            <p class = "ad-tittle"><b>Surface Pro for sale!1!!!1!! only 999.99$</b></p>
-                            <img class = "ad-image" src = "images/Ads/ad-1.jpg" alt = "Ad image">
-                            <img class = "favorite-image" src = "images/Ads/star-icon.png" alt = "Favorite">
-                            <p class = "date">07/10/2015</p>
-                        </div>
-                        </a>
-                    </li>
-                    <!-- Second advertisement -->
-                    <li>
-                        <a href = "Advertisement.html">
-                        <div class = "ad" id = "advertisement-2">
-                            <p class = "ad-tittle"><b>XBox One GREAT SALE going PCmasterrace</b></p>
-                            <img class = "ad-image" src = "images/Ads/ad-2.jpg" alt = "Ad image">
-                            <img class = "favorite-image" src = "images/Ads/star-icon.png" alt = "Favorite">
-                            <p class = "date">21/09/2015</p>
-                        </div>
-                        </a>
-                    </li>
+                <!-- First advertisement -->
+                <a href = "Advertisement.html">
+                <div class = "ad" id = "advertisement-1">
+                    <p class = "ad-tittle"><b>Surface Pro for sale!1!!!1!! only 999.99$</b></p>
+                    <img class = "ad-image" src = "images/Ads/ad-1.jpg" alt = "Ad image">
+                    <img class = "favorite-image" src = "images/Ads/star-icon.png" alt = "Favorite">
+                    <p class = "date">07/10/2015</p>
+                </div>
+                </a>
+                
+                <!-- Second advertisement -->
+                <a href = "Advertisement.html">
+                <div class = "ad" id = "advertisement-2">
+                    <p class = "ad-tittle"><b>XBox One GREAT SALE going PCmasterrace</b></p>
+                    <img class = "ad-image" src = "images/Ads/ad-2.jpg" alt = "Ad image">
+                    <img class = "favorite-image" src = "images/Ads/star-icon.png" alt = "Favorite">
+                    <p class = "date">21/09/2015</p>
+                </div>
+                </a>
 
-                    <!-- Third advertisement -->
-                    <li>
-                        <a href = "Advertisement.html">
-                        <div class = "ad" id = "advertisement-3">
-                            <p class = "ad-tittle"><b>Selling Moto 360 not used very new</b></p>
-                            <img class = "ad-image" src = "images/Ads/ad-3.jpg" alt = "Ad image">
-                            <img class = "favorite-image" src = "images/Ads/star-icon.png" alt = "Favorite">
-                            <p class = "date">04/09/2015</p>
-                        </div>
-                        </a>
-                    </li>
+                <!-- Third advertisement -->
+                <a href = "Advertisement.html">
+                <div class = "ad" id = "advertisement-3">
+                    <p class = "ad-tittle"><b>Selling Moto 360 not used very new</b></p>
+                    <img class = "ad-image" src = "images/Ads/ad-3.jpg" alt = "Ad image">
+                    <img class = "favorite-image" src = "images/Ads/star-icon.png" alt = "Favorite">
+                    <p class = "date">04/09/2015</p>
+                </div>
+                </a>
 
-                    <!-- Fourth advertisement -->
-                    <li>
-                        <a href = "Advertisement.html">
-                        <div class = "ad" id = "advertisement-4">
-                            <p class = "ad-tittle"><b>Want to change Samsong S3 for iPhone 7</b></p>
-                            <img class = "ad-image" src = "images/Ads/ad-4.jpg" alt = "Ad image">
-                            <img class = "favorite-image" src = "images/Ads/star-icon.png" alt = "Favorite">
-                            <p class = "date">02/08/2015</p>
-                        </div>
-                        </a>
-                    </li>
+                <!-- Fourth advertisement -->
+                <a href = "Advertisement.html">
+                <div class = "ad" id = "advertisement-4">
+                    <p class = "ad-tittle"><b>Want to change Samsong S3 for iPhone 7</b></p>
+                    <img class = "ad-image" src = "images/Ads/ad-4.jpg" alt = "Ad image">
+                    <img class = "favorite-image" src = "images/Ads/star-icon.png" alt = "Favorite">
+                    <p class = "date">02/08/2015</p>
+                </div>
+                </a>
 
-                    <!-- Fifth advertisement -->
-                    <li>
-                        <a href = "Advertisement.html">
-                        <div class = "ad" id = "advertisement-5">
-                            <p class = "ad-tittle"><b>Ultrawide monitor!! A lot of space!!!</b></p>
-                            <img class = "ad-image" src = "images/Ads/ad-5.jpg" alt = "Ad image">
-                            <img class = "favorite-image" src = "images/Ads/star-icon.png" alt = "Favorite">
-                            <p class = "date">16/07/2015</p>
-                        </div>
-                        </a>
-                    </li>
+                <!-- Fifth advertisement -->
+                <a href = "Advertisement.html">
+                <div class = "ad" id = "advertisement-5">
+                    <p class = "ad-tittle"><b>Ultrawide monitor!! A lot of space!!!</b></p>
+                    <img class = "ad-image" src = "images/Ads/ad-5.jpg" alt = "Ad image">
+                    <img class = "favorite-image" src = "images/Ads/star-icon.png" alt = "Favorite">
+                    <p class = "date">16/07/2015</p>
+                </div>
+                </a>
 
-                    <!-- Sixth advertisement -->
-                    <li>
-                        <a href = "Advertisement.html">
-                        <div class = "ad" id = "advertisement-6">
-                            <p class = "ad-tittle"><b>Best computer ever! Raspberry Pie!!! SALE!!!</b></p>
-                            <img class = "ad-image" src = "images/Ads/ad-6.jpg" alt = "Ad image">
-                            <img class = "favorite-image" src = "images/Ads/star-icon.png" alt = "Favorite">
-                            <p class = "date">10/07/2015</p>
-                        </div>
-                        </a>
-                    </li>
-
-                </ul>
-
+                <!-- Sixth advertisement -->
+                <a href = "Advertisement.html">
+                <div class = "ad" id = "advertisement-6">
+                    <p class = "ad-tittle"><b>Best computer ever! Raspberry Pie!!! SALE!!!</b></p>
+                    <img class = "ad-image" src = "images/Ads/ad-6.jpg" alt = "Ad image">
+                    <img class = "favorite-image" src = "images/Ads/star-icon.png" alt = "Favorite">
+                    <p class = "date">10/07/2015</p>
+                </div>
+                </a>
+                
             </div>
 
 		</div>
