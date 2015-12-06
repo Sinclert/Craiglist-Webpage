@@ -24,19 +24,7 @@ $(document).ready(function () {
     });
     $("#triangle").click(function() {
         $("#sort_buttons").toggle(500);
-    });
-    
-    
-    // Sort by Date process
-    var $divs = $("div.ad")
-    
-    $('#date_sort_button').on('click', function(){
-    var numericallyOrderedDivs = $divs.sort(function(a,b){
-        return $(a).find(".date").text() > $(b).find(".date").text();
-    });
-    $("#list").html(numericallyOrderedDivs);
-});
-    
+    });   
     
     
     // FUNCTION 2
@@ -298,54 +286,57 @@ $(document).ready(function () {
 	});
 });
 
-    function sort_name() {
-        ul = document.getElementById("list");
-    
-        // Get the list items and setup an array for sorting
-        var lis = ul.getElementsByTagName("div");
-        var vals = [];
 
+/* FUNCTION TO SORT BY NAME */
+function sort_name() {
+    list = document.getElementById("list");
     
-        // Populate the array
-        for (var i = 0, l = lis.length; i < l; i++){
-            var value = lis[i].getElementsByClassName("ad-tittle");
-            vals.push(value[0].parentElement.innerHTML);
-        }
-    
-        // Sort it
-        vals.sort();
-    
-        // Change the list on the page
-        for (var i = 0, l = lis.length; i < l; i++){
-            lis[i].innerHTML = vals[i];
-        }
+    // Get the list items and setup an array for sorting
+    var ads = list.getElementsByClassName("ad");
+    var names = [];
+
+    // Populate the array
+    for (var i = 0, l = ads.length; i < l; i++){
+        names.push(ads[i].innerHTML);
     }
-
-    function sort_date() {
-        ul = document.getElementById("list");
-        
-        var lis = ul.getElementsByClassName("ad");
-        var values = [];
-        
-        for (var i = 0, l = lis.length; i < l; i++){
-            var val = lis[i].getElementsByTagName("p");
-            values.push(val[0].parentElement.innerHTML);
-        }
-        
-        values.sort();
-        
-        for (var i = 0, l=lis.length; i < l; i++){
-            lis[i].innerHTML = vals[i];
-        }
+    
+    // Sort it
+    names.sort();
+    
+    // Change the list on the page
+    for (var i = 0, l = ads.length; i < l; i++){
+        ads[i].innerHTML = names[i];
     }
+}
 
-    function sortDescending(a, b) {
-        var date1  = $(a).find(".date").text();
-            date1 = date1.split('/');
-            date1 = new Date(date1[2], date1[1] -1, date1[0]);
-        var date2  = $(b).find(".date").text();
-            date2= date2.split('/');
-            date2= new Date(date2[2], date2[1] -1, date2[0]);
-
-     return date1 < date2 ? 1 : -1;
+/* FUNCTION TO SORT BY DATE */
+function sort_date() {
+        
+    list = document.getElementById("list");
+    var ads = list.getElementsByClassName("ad");
+    var dates = [];
+        
+    for (var i = 0 ; i < ads.length ; i++){
+        dates.push(ads[i].innerHTML);
     }
+        
+    // HERE THE ARRAY IS SORTED, DO NOT TOUCH A SINGLE COMMA!!
+    dates.sort(function (d1, d2) {
+            
+        function parseDate(str) {
+            var parts = str.match(/(\d+)/g);
+            return new Date(parts[2], parts[1], parts[0]);
+        }
+            
+        var index1 = String(d1).search("date");
+        var string1 = String(d1).substring(index1+6, index1+16);
+        var index2 = String(d2).search("date");
+        var string2 = String(d2).substring(index2+6, index2+16);
+        return parseDate(string1) - parseDate(string2);
+    });
+        
+    // Change the list on the page
+    for (var i = 0 ; i < ads.length ; i++){
+        ads[i].innerHTML = dates[i];
+    }
+}
