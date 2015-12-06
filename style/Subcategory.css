@@ -183,29 +183,29 @@ a:hover{
 	color: #000000;
 }
 
-.sort li ul {
-
-    display: none;
-    position: absolute;
-}
-
-.sort li ul li {
+.sort_elements li {
     text-align: center;
     background-color: #fafafa;
     width: 100px;
     height: 30px;
     padding: 5px;
+    line-height: 30px;
     font-family: sans-serif;
-
+    margin: 1px;
 }
 
-.sort li:hover > ul {
-    display: block;
+.sort_elements {
+    
+    position: absolute;
+    margin-bottom: -50px;
+    display: none;
+    
 }
 
-#sortbutton {
-    background-color: white;
-    border: none;
+.sort_elements li:hover {
+    
+    background-color: #1EAAF1;
+    color: white;
 }
 
 #triangle {
@@ -221,6 +221,7 @@ a:hover{
 
 #button_text {
     float:left;
+    font-family: sans-serif; 
 }
 
 #list {
