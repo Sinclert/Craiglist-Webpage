@@ -17,21 +17,17 @@ $(document).ready(function () {
         }
 	});
     
+    
     // Functions to toggle the visibility of the sort by menu
-    
     $("#button_text").click(function() {
-        
-        $(".sort_elements").toggle(500);
+        $("#sort_buttons").toggle(500);
     });
-    
     $("#triangle").click(function() {
-        
-        $(".sort_elements").toggle(500);
+        $("#sort_buttons").toggle(500);
     });
     
     
     // Sort by Date process
-    
     var $divs = $("div.ad")
     
     $('#date_sort_button').on('click', function(){
@@ -352,4 +348,4 @@ $(document).ready(function () {
             date2= new Date(date2[2], date2[1] -1, date2[0]);
 
      return date1 < date2 ? 1 : -1;
-    };
+    }

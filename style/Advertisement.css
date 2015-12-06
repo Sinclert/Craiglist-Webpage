@@ -195,12 +195,14 @@ a:hover{
 }
 
 #options {
-    width: 100%;
+    width: 98%;
+    margin-right: 2%;
     white-space: nowrap;
 }
 
 #options div {
-    width: 24%;
+    background-color: #EDEEEE;
+    width: 25%;
     text-align: center;
     display: inline-block;
 }

@@ -306,18 +306,13 @@
                     <li>
                         <div id= "button_text">Sort by</div>
                         <div id= "triangle"></div>
-                        <ul class = "sort_elements">
-                            <li onclick="sort_name()">Name</li>
-                            <li onclick="sort_date()">Date</li>
-                            <li>Popularity</li>
-                        </ul>
+                        <div id = "sort_buttons">
+                            <div onclick = "sort_name()">Name</div>
+                            <div onclick = "sort_date()">Date</div>
+                            <div>Popularity</div>
+                        </div>
                     </li>
                 </ul>
-
-                <!--<button id = "sortbutton" type = "button" onclick ="sort()">
-                    <div id= "button_text">Alphabetical</div>
-                    <div id = "triangle"></div>
-                </button>-->
 
             </div>
 
@@ -388,7 +383,7 @@
 		</div>
 
 		<div id = "footer">
-			<p id = "copyright">©2015 Craigslist</p>
+			<p id = "copyright">© 2015 Craigslist</p>
 			<div id = "footertext">
 				<p>Help</p>
 				<p>Safety</p>
