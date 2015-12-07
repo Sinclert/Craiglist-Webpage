@@ -265,7 +265,7 @@ a:hover{
     box-shadow: 0 0 2px #999;
 }
 
-@media only screen and (min-width: 550px) and (max-width: 840px){
+@media only screen and (max-width: 840px){
     
 	#slider {
 		float: left;
@@ -279,5 +279,6 @@ a:hover{
 		width: 90%;
 		margin-left: 5%;
         margin-right: 5%;
+		margin-bottom: 20px;
 	}
 }
