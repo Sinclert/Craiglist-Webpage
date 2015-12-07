@@ -141,16 +141,14 @@ a:hover{
 
 #content {
 	z-index: 2;
-	min-height: 700px;
+	min-height: 615px;
     margin-top: -16px;
 	margin-bottom: -16px;
 	margin-left: 220px;
+	text-align: center;
 }
 
 /* Particular elements */
-#content {
-	text-align: center;
-}
 
 .img_category {
 	width: 160px;
@@ -202,7 +200,7 @@ a:hover{
 
 .list_category {
 	display: inline-block;
-	clear: right;
+	clear: both;
 }
 
 .subcategories {
