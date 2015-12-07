@@ -20,10 +20,10 @@ $(document).ready(function () {
     
     // Functions to toggle the visibility of the sort by menu
     $("#button_text").click(function() {
-        $("#sort_buttons").toggle(500);
+        $("#sort_buttons").slideToggle(500);
     });
     $("#triangle").click(function() {
-        $("#sort_buttons").toggle(500);
+        $("#sort_buttons").slideToggle(500);
     });   
     
     
