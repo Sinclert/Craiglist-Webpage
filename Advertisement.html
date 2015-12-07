@@ -5,6 +5,7 @@
         <link rel = "stylesheet" type = "text/css" href = "style/Advertisement.css">
         <script type="text/javascript" src="scripts/jquery-1.8.3.min.js"></script>
         <script type="text/javascript" src="scripts/script.js"></script>
+        <script type="text/javascript" src="scripts/slider.js"></script>
         <title>Craigslist: The place to search</title>
 	</head>
 
@@ -305,7 +306,37 @@
             <div id = "ad">
 
                 <div id = "slider">
-                    <img src = "images/Specific-ad/image-1.jpg">
+                    
+
+
+                    <!-- IMAGE SLIDER -->
+                    <div id = "container">
+
+                        <!-- First screen with its image, tittle and description -->
+                        <div style = "display:inline-block">
+                            <img src = "./Images/Specific-ad/image-1.jpg" alt = "Blackjack image"/>
+                        </div>
+                        
+                        <!-- Second screen with its image, tittle and description -->
+                        <div>
+                            <img src = "./Images/Specific-ad/image-2.jpg" alt = "Poker image"/>
+                        </div>
+                        
+                        <!-- Third screen with its image, tittle and description -->
+                        <div>
+                            <img src = "./Images/Specific-ad/image-3.jpg" alt = "Roulette image"/>
+                        </div>
+                        
+                        <!-- Fourth screen with its image, tittle and description -->
+                        <div>
+                            <img src = "./Images/Specific-ad/image-4.jpg" alt = "Blackjack image"/>
+                        </div>
+                    </div>
+                                        <!-- Buttons to navigate through the images -->
+                    <button id = "prev">&lsaquo;</button>
+                    <button id = "next">&rsaquo;</button>
+                    
+                    
                 </div>
 
                 <div id = "description">
