@@ -32,255 +32,58 @@ $(document).ready(function () {
 		$("#contact-options").slideToggle("fast");
 	});
     
-    // FUNCTION 3
-	$("#main_cat1").click(function () {
+    
+    
+    var categories = document.getElementsByClassName("img_category");
+    var categories_dropdown = document.getElementsByClassName("cats");
+    var subcategories = document.getElementsByClassName("subcategories");
+    
+    
+    // GENERIC FUNCTION
+    $(".img_category").click(function () {
+        
+        var i = 0;
+        for(i = 0; i < categories.length ; i++){
+            if(categories[i].innerHTML == this.innerHTML){
+                break;
+            }    
+        }
+        
 		if ($(this).val() === "1") {
 			$(this).val(0);
-			$("#cat1").slideUp("fast", function () {
-				$("#subm1").slideUp("fast");
-				$("#subm1").fadeOut();
-				$("#subm2").slideUp("fast");
-				$("#subm2").fadeOut();
-				$("#subm3").slideUp("fast");
-				$("#subm3").fadeOut();
-			});
-		} else {
+			$(categories_dropdown[i]).slideUp("fast", function () {
+                for(var j = 0; j < subcategories.length ; j++){
+                    $(subcategories[j]).slideUp("fast");
+                    $(subcategories[j]).fadeOut();
+                }    
+            });
+        }
+        else {
 			$(".img_category").val(0);
 			$(this).val(1);
-			$("#cat1").slideDown("fast", function () {
-				$("#subm1").slideDown("fast");
-				$("#subm1").fadeIn();
-				$("#subm2").slideUp("fast");
-				$("#subm2").fadeOut();
-				$("#subm3").slideUp("fast");
-				$("#subm3").fadeOut();
+			$(categories_dropdown[i]).slideDown("fast", function () {
+                var index = Math.floor(i/3);
+				for(var j = 0; j < subcategories.length ; j++){
+                    if (j == index){
+                        $(subcategories[j]).slideDown("fast");
+                        $(subcategories[j]).fadeIn();
+                    }
+                    else{
+                        $(subcategories[j]).slideUp("fast");
+                        $(subcategories[j]).fadeOut();
+                    }
+                }  
 			});
-			$("#cat2").slideUp("fast");
-			$("#cat3").slideUp("fast");
-			$("#cat4").slideUp("fast");
-			$("#cat5").slideUp("fast");
-			$("#cat6").slideUp("fast");
-			$("#cat7").slideUp("fast");
-			$("#cat8").slideUp("fast");
+			for(var j = 0; j < categories_dropdown.length ; j++){
+                if (j == i){
+                    continue;
+                }
+                $(categories_dropdown[j]).slideUp("fast");
+            }
 		}
 	});
-	$("#main_cat2").click(function () {
-		if ($(this).val() === "1") {
-			$(this).val(0);
-			$("#cat2").slideUp("fast", function () {
-				$("#subm1").slideUp("fast");
-				$("#subm1").fadeOut();
-				$("#subm2").slideUp("fast");
-				$("#subm2").fadeOut();
-				$("#subm3").slideUp("fast");
-				$("#subm3").fadeOut();
-			});
-		} else {
-			$(".img_category").val(0);
-			$(this).val(1);
-			$("#cat2").slideDown("fast", function () {
-				$("#subm1").slideDown("fast");
-				$("#subm1").fadeIn();
-				$("#subm2").slideUp("fast");
-				$("#subm2").fadeOut();
-				$("#subm3").slideUp("fast");
-				$("#subm3").fadeOut();
-			});
-			$("#cat1").slideUp("fast");
-			$("#cat3").slideUp("fast");
-			$("#cat4").slideUp("fast");
-			$("#cat5").slideUp("fast");
-			$("#cat6").slideUp("fast");
-			$("#cat7").slideUp("fast");
-			$("#cat8").slideUp("fast");
-		}
-	});
-	$("#main_cat3").click(function () {
-		if ($(this).val() === "1") {
-			$(this).val(0);
-			$("#cat3").slideUp("fast", function () {
-				$("#subm1").slideUp("fast");
-				$("#subm1").fadeOut();
-				$("#subm2").slideUp("fast");
-				$("#subm2").fadeOut();
-				$("#subm3").slideUp("fast");
-				$("#subm3").fadeOut();
-			});
-		} else {
-			$(".img_category").val(0);
-			$(this).val(1);
-			$("#cat3").slideDown("fast", function () {
-				$("#subm1").slideDown("fast");
-				$("#subm1").fadeIn();
-				$("#subm2").slideUp("fast");
-				$("#subm2").fadeOut();
-				$("#subm3").slideUp("fast");
-				$("#subm3").fadeOut();
-			});
-			$("#cat1").slideUp("fast");
-			$("#cat2").slideUp("fast");
-			$("#cat4").slideUp("fast");
-			$("#cat5").slideUp("fast");
-			$("#cat6").slideUp("fast");
-			$("#cat7").slideUp("fast");
-			$("#cat8").slideUp("fast");
-		}
-	});
-	$("#main_cat4").click(function () {
-		if ($(this).val() === "1") {
-			$(this).val(0);
-			$("#cat4").slideUp("fast", function () {
-				$("#subm1").slideUp("fast");
-				$("#subm1").fadeOut();
-				$("#subm2").slideUp("fast");
-				$("#subm2").fadeOut();
-				$("#subm3").slideUp("fast");
-				$("#subm3").fadeOut();
-			});
-		} else {
-			$(".img_category").val(0);
-			$(this).val(1);
-			$("#cat4").slideDown("fast", function () {
-				$("#subm1").slideUp("fast");
-				$("#subm1").fadeOut();
-				$("#subm2").slideDown("fast");
-				$("#subm2").fadeIn();
-				$("#subm3").slideUp("fast");
-				$("#subm3").fadeOut();
-			});
-			$("#cat1").slideUp("fast");
-			$("#cat2").slideUp("fast");
-			$("#cat3").slideUp("fast");
-			$("#cat5").slideUp("fast");
-			$("#cat6").slideUp("fast");
-			$("#cat7").slideUp("fast");
-			$("#cat8").slideUp("fast");
-		}
-	});
-	$("#main_cat5").click(function () {
-		if ($(this).val() === "1") {
-			$(this).val(0);
-			$("#cat5").slideUp("fast", function () {
-				$("#subm1").slideUp("fast");
-				$("#subm1").fadeOut();
-				$("#subm2").slideUp("fast");
-				$("#subm2").fadeOut();
-				$("#subm3").slideUp("fast");
-				$("#subm3").fadeOut();
-			});
-		} else {
-			$(".img_category").val(0);
-			$(this).val(1);
-			$("#cat5").slideDown("fast", function () {
-				$("#subm1").slideUp("fast");
-				$("#subm1").fadeOut();
-				$("#subm2").slideDown("fast");
-				$("#subm2").fadeIn();
-				$("#subm3").slideUp("fast");
-				$("#subm3").fadeOut();
-			});
-			$("#cat1").slideUp("fast");
-			$("#cat2").slideUp("fast");
-			$("#cat3").slideUp("fast");
-			$("#cat4").slideUp("fast");
-			$("#cat6").slideUp("fast");
-			$("#cat7").slideUp("fast");
-			$("#cat8").slideUp("fast");
-		}
-	});
-	$("#main_cat6").click(function () {
-		if ($(this).val() === "1") {
-			$(this).val(0);
-			$("#cat6").slideUp("fast", function () {
-				$("#subm1").slideUp("fast");
-				$("#subm1").fadeOut();
-				$("#subm2").slideUp("fast");
-				$("#subm2").fadeOut();
-				$("#subm3").slideUp("fast");
-				$("#subm3").fadeOut();
-			});
-		} else {
-			$(".img_category").val(0);
-			$(this).val(1);
-			$("#cat6").slideDown("fast", function () {
-				$("#subm1").slideUp("fast");
-				$("#subm1").fadeOut();
-				$("#subm2").slideDown("fast");
-				$("#subm2").fadeIn();
-				$("#subm3").slideUp("fast");
-				$("#subm3").fadeOut();
-			});
-			$("#cat1").slideUp("fast");
-			$("#cat2").slideUp("fast");
-			$("#cat3").slideUp("fast");
-			$("#cat4").slideUp("fast");
-			$("#cat5").slideUp("fast");
-			$("#cat7").slideUp("fast");
-			$("#cat8").slideUp("fast");
-		}
-	});
-	$("#main_cat7").click(function () {
-		if ($(this).val() === "1") {
-			$(this).val(0);
-			$("#cat7").slideUp("fast", function () {
-				$("#subm1").slideUp("fast");
-				$("#subm1").fadeOut();
-				$("#subm2").slideUp("fast");
-				$("#subm2").fadeOut();
-				$("#subm3").slideUp("fast");
-				$("#subm3").fadeOut();
-			});
-		} else {
-			$(".img_category").val(0);
-			$(this).val(1);
-			$("#cat7").slideDown("fast", function () {
-				$("#subm1").slideUp("fast");
-				$("#subm1").fadeOut();
-				$("#subm2").slideUp("fast");
-				$("#subm2").fadeOut();
-				$("#subm3").slideDown("fast");
-				$("#subm3").fadeIn();
-			});
-			$("#cat1").slideUp("fast");
-			$("#cat2").slideUp("fast");
-			$("#cat3").slideUp("fast");
-			$("#cat4").slideUp("fast");
-			$("#cat5").slideUp("fast");
-			$("#cat6").slideUp("fast");
-			$("#cat8").slideUp("fast");
-		}
-	});
-	$("#main_cat8").click(function () {
-		if ($(this).val() === "1") {
-			$(this).val(0);
-			$("#cat8").slideUp("fast", function () {
-				$("#subm1").slideUp("fast");
-				$("#subm1").fadeOut();
-				$("#subm2").slideUp("fast");
-				$("#subm2").fadeOut();
-				$("#subm3").slideUp("fast");
-				$("#subm3").fadeOut();
-			});
-		} else {
-			$(".img_category").val(0);
-			$(this).val(1);
-			$("#cat8").slideDown("fast", function () {
-				$("#subm1").slideUp("fast");
-				$("#subm1").fadeOut();
-				$("#subm2").slideUp("fast");
-				$("#subm2").fadeOut();
-				$("#subm3").slideDown("fast");
-				$("#subm3").fadeIn();
-			});
-			$("#cat1").slideUp("fast");
-			$("#cat2").slideUp("fast");
-			$("#cat3").slideUp("fast");
-			$("#cat4").slideUp("fast");
-			$("#cat5").slideUp("fast");
-			$("#cat6").slideUp("fast");
-			$("#cat7").slideUp("fast");
-		}
-	});
+    
+    
 	$("#main_cat9").click(function () {
 		location.href = "subcategory.html";
 	});
