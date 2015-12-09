@@ -123,6 +123,10 @@ $(document).ready(function () {
 		}
 		lastScrollTop = st;
 	}
+	
+	if ($("body").height() <= $(window).height()) {
+        $('#footer').removeClass('nav-up').addClass('nav-down');
+    }
 });
 
 
