@@ -110,13 +110,14 @@ a:hover{
 
 #footer {
     float: left;
-    position: relative;
+    position: fixed;
+	bottom: 0;
+	transition: bottom 0.2s ease-in-out;
     overflow: hidden;
     background-color: #1E1E1E;
 	height: 50px;
 	width: 100%;
 	z-index: 1;
-	bottom: 0;
 	min-width: 1024;
 }
 
@@ -277,5 +278,9 @@ a:hover{
 	border-color: #434343;
     float: right;
     height: 100%;
+}
+
+.nav-up {
+    top: -50px;
 }
 
