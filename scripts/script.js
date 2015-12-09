@@ -82,14 +82,25 @@ $(document).ready(function () {
             }
 		}
 	});
-    
-    
-	$("#main_cat9").click(function () {
+	
+    $("#main_cat9").click(function () {
 		location.href = "subcategory.html";
 	});
-	
-		// FOOTER SHIT
-	var didScroll;
+    
+    // FOOTER SHIT
+    var height;
+    var trigger = 50;
+    $(window).scroll(function() {
+        height = $(document).height()-$(window).height();
+    	if ($(this).scrollTop() > height - trigger) {
+    		$('#footer').slideDown(300);
+    	} else {
+    		$('#footer').slideUp(300);
+    	}
+    });
+    
+	/*
+    var didScroll;
 	var lastScrollTop = 0;
 	var delta = 5;
 	var navbarHeight = $("#footer").outerHeight();
@@ -127,6 +138,7 @@ $(document).ready(function () {
 	if ($("body").height() <= $(window).height()) {
         $('#footer').removeClass('nav-up').addClass('nav-down');
     }
+    */
 });
 
 
