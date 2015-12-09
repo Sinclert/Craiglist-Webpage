@@ -114,11 +114,11 @@ $(document).ready(function () {
 		
 		if (st > lastScrollTop && st > navbarHeight){
 			// Scroll Down
-			$('#footer').removeClass('nav-down').addClass('nav-up');
+			$('#footer').removeClass('nav-up').addClass('nav-down');
 		} else {
 			// Scroll Up
 			if(st + $(window).height() < $(document).height()) {
-				$('#footer').removeClass('nav-up').addClass('nav-down');
+				$('#footer').removeClass('nav-down').addClass('nav-up');
 			}
 		}
 		lastScrollTop = st;

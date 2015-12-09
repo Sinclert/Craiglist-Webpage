@@ -197,6 +197,7 @@ a:hover{
     width: 25%;
     text-align: center;
     display: inline-block;
+	margin-bottom: 50px;
 }
 
 #options div:hover{
