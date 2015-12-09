@@ -111,12 +111,11 @@ a:hover{
 #footer {
     float: left;
     position: fixed;
-	bottom: 0;
-	transition: bottom 0.2s ease-in-out;
     overflow: hidden;
     background-color: #1E1E1E;
 	height: 50px;
 	width: 100%;
+    bottom: 0;
 	z-index: 1;
 	min-width: 1024;
 }
@@ -142,7 +141,6 @@ a:hover{
 
 #content {
 	z-index: 2;
-	min-height: 700px;
 	margin-top: -16px;
 	margin-bottom: -16px;
     margin-left: 220px;
