@@ -111,12 +111,11 @@ a:hover{
 #footer {
     float: left;
     position: fixed;
-	bottom: 0;
-	transition: bottom 0.2s ease-in-out;
     overflow: hidden;
     background-color: #1E1E1E;
 	height: 50px;
 	width: 100%;
+    bottom: 0;
 	z-index: 1;
 	min-width: 1024;
 }
@@ -142,7 +141,6 @@ a:hover{
 
 #content {
     z-index: 2;
-    min-height: 700px;
     margin-top: -16px;
     margin-bottom: -16px;
     margin-left: 220px;
@@ -153,7 +151,6 @@ a:hover{
     display: inline-block;
     width: 100%;
     height: 70px;
-	text-overflow: ellipsis;
 }
 
 #location img {
@@ -170,12 +167,10 @@ a:hover{
     margin-left: 10px;
 	font-size: 16px;
 	width: 85%;
-	text-overflow: ellipsis;
 }
 
 #location a {
 	color: #000000;
-	text-overflow: ellipsis;
 }
 
 #description {
@@ -193,10 +188,10 @@ a:hover{
 }
 
 #options div {
-    background-color: #EDEEEE;
-    width: 25%;
     text-align: center;
     display: inline-block;
+    background-color: #EDEEEE;
+    width: 25%;
 	margin-bottom: 50px;
 }
 
@@ -208,7 +203,7 @@ a:hover{
 #contact-options {
     display: none;
     margin-left: 7%;
-    width: 100;
+    width: 100%;
 	margin-top: -50px;
 	margin-bottom: 50px;
 }

@@ -39,7 +39,7 @@ $(document).ready(function () {
     var subcategories = document.getElementsByClassName("subcategories");
     
     
-    // GENERIC FUNCTION
+    /* Generic function to toggle home categories */
     $(".img_category").click(function () {
         
         var i = 0;
@@ -87,11 +87,11 @@ $(document).ready(function () {
 		location.href = "subcategory.html";
 	});
     
-    // FOOTER TOGGLE
-    var height;
-    var trigger = 50;
+    /* Footer toggle */
+    var trigger = 25;
+
     $(window).scroll(function() {
-        height = $(document).height()-$(window).height();
+        var height = $(document).height()-$(window).height();
     	if ($(this).scrollTop() > height - trigger) {
     		$('#footer').slideDown(300);
     	} else {
