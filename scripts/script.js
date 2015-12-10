@@ -20,16 +20,16 @@ $(document).ready(function () {
     
     // Functions to toggle the visibility of the sort by menu
     $("#button_text").click(function() {
-        $("#sort_buttons").slideToggle(500);
+        $("#sort_buttons").slideToggle(300);
     });
     $("#triangle").click(function() {
-        $("#sort_buttons").slideToggle(500);
+        $("#sort_buttons").slideToggle(300);
     });   
     
     
     // FUNCTION 2
 	$("#contact").click(function () {
-		$("#contact-options").slideToggle("fast");
+		$("#contact-options").slideToggle(300);
 	});
     
     
