@@ -251,6 +251,15 @@ a:hover{
     text-decoration: none;
     font: 24px/27px Arial, sans-serif;
     border-radius: 30px;
+    border-top-color: #616161;
+    border-top-width: 0px;
+    border-right-color: #616161;
+    border-right-width: 0px;
+    border-bottom-color: #616161;
+    border-bottom-width: 0px;
+    border-left-color: #616161;
+    border-left-width: 0px;
+	background-color: #616161;
 }
 
 #next {
@@ -263,6 +272,15 @@ a:hover{
     text-decoration: none;
     font: 24px/27px Arial, sans-serif;
 	border-radius: 30px;
+	border-top-color: #616161;
+    border-top-width: 0px;
+    border-right-color: #616161;
+    border-right-width: 0px;
+    border-bottom-color: #616161;
+    border-bottom-width: 0px;
+    border-left-color: #616161;
+    border-left-width: 0px;
+	background-color: #616161;
 }
 
 @media only screen and (max-width: 840px){
