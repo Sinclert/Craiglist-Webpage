@@ -26,6 +26,8 @@ In this case, we present one of the advertisements of our page in a simple forma
 
 ### Team members:
 <a href="https://github.com/demonxdrag">Adrián Pappalardo</a>
+
 <a href="https://github.com/DanielBrinzei">Daniel Brinzei</a>
+
 <a href="https://github.com/blayhem">Daniel Fernández</a>
 
