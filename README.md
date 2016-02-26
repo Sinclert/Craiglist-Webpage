@@ -24,3 +24,8 @@ We also have, as we said before, a button that sorts the ads of the page, either
 #### Advertisement:
 In this case, we present one of the advertisements of our page in a simple format, with the title, the description of the ad and a slider of images that the person of interest can upload to show and promote his product. Below that we have a selection of buttons that helps us contact the advertiser, report the ad, share it or add it to favorites.
 
+### Team members:
+<a href="https://github.com/demonxdrag">Adrián Pappalardo</a>
+<a href="https://github.com/DanielBrinzei">Daniel Brinzei</a>
+<a href="https://github.com/blayhem">Daniel Fernández</a>
+
