@@ -1,7 +1,7 @@
-# Craiglist-Webpage
+# Craigslist-Webpage
 
 ### What is it?
-This project was our final project in the User Interfaces subject. It consists of an entire redesign of <a href="https://madrid.craigslist.es">Craiglist</a>, an advertisement webpage. The redesign covers the 3 main pages where the action takes place: Home page, Subcategory page and Advertisement page.
+This project was our final project in the User Interfaces subject. It consists of an entire redesign of <a href="https://madrid.craigslist.es">Craigslist</a>, an advertisement webpage. The redesign covers the 3 main pages where the action takes place: Home page, Subcategory page and Advertisement page.
 
 ### What is in the recository?
 The repository contains every file of the redesing:
