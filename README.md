@@ -34,9 +34,10 @@ In this case, we present one of the advertisements of our page in a simple forma
 <img align="center" src="https://github.com/Sinclert/Craiglist-Webpage/blob/master/images/Prototype/Photo-5.png">
 
 ## Team members:
+<a href="https://github.com/Sinclert">Sinclert Pérez</a>
+<br>
 <a href="https://github.com/demonxdrag">Adrián Pappalardo</a>
 <br>
-<a href="https://github.com/DanielBrinzei">Daniel Brinzei</a>
-<br>
 <a href="https://github.com/blayhem">Daniel Fernández</a>
-
+<br>
+<a href="https://github.com/DanielBrinzei">Daniel Brinzei</a>
